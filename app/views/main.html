@@ -1,65 +1,19 @@
-<div class="row">
+<div class="row" ng-controller="BattleCtrl">
 	<div class="col-md-6">
 		<img src="../images/yeoman.png"> <br /> <br />
+
 		<div class="btn-group">
-		  <button type="button" class="btn btn-primary">Select Team 1</button>
-		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-		    <span class="caret"></span>
-		    <span class="sr-only">Toggle Dropdown</span>
-		  </button>
-		  <ul class="dropdown-menu" role="menu">
-				<!-- TODO: li data from angular -->
-		  </ul>
+      <select class="form-control">
+        <option ng-repeat="team in teams" value={{team.name}}> {{team.name}} </option>
+      </select>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<img src="../images/yeoman.png"> <br /> <br />
-		<div class="btn-group">
-		  <button type="button" class="btn btn-primary">Select Team 2</button>
-		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-		    <span class="caret"></span>
-		    <span class="sr-only">Toggle Dropdown</span>
-		  </button>
-		  <ul class="dropdown-menu" role="menu">
-				<!-- TODO: li data from angular -->
-		  </ul>
-		</div>
+    <div class="btn-group">
+  		<select class="form-control">
+          <option ng-repeat="team in teams"  value={{team.name}}> {{team.name}} </option>
+      </select>
+    </div>
 	</div>
 </div>
-
-<!-- <div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">GeekyBattlePikachu</h3>
-</div>
-
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
-
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
-</div> -->

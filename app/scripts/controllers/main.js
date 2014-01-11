@@ -8,9 +8,14 @@ angular.module('geekyBattlePikachuApp')
                     {name:'Pikachu'},
                     ];
 
+    $scope.team1 ="-";
+    $scope.team2="-";
+
     $scope.teamInputIsEqual = function(){
+      console.log("test");
       var dropdownOne = 'ab';
       var dropdownTwo = 'a  ';
+      alert("I'm here");
       if(dropdownOne === dropdownTwo)
       {
         return true;
