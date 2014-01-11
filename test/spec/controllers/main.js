@@ -34,7 +34,27 @@ describe('Controller: BattleCtrl', function () {
   it('should not have the empty selection in the list' , function(){
     scope.team1 = "s";
     scope.team2 = "";
-    expect( scope.checkEmptySelection()).toEqual(false);
+    expect(scope.checkEmptySelection()).toEqual(false);
+  });
+
+  it('should expect the warning msg to be red, if same team are selected', function(){
+    scope.team1 = "s";
+    scope.team2 = "s";
+    scope.teamInputIsEqual();
+    expect(scope.msgClass).toEqual("text-danger");
+  });
+
+  it('should expect the warning msg to be normal as default', function(){
+    scope.team1 = "s";
+    scope.team2 = "s";
+    scope.teamInputIsEqual();
+    expect(scope.msgClass).toEqual("text-danger");
+
+    scope.team1 = "a";
+    scope.team2 = "s";
+    scope.teamInputIsEqual();
+    expect(scope.msgClass).toEqual("");
+
   });
 
 });
