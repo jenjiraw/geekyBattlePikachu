@@ -139,19 +139,6 @@ module.exports = function (grunt) {
     
 
     
-    // Compiles Sass to CSS and generates necessary files if requested
-      dist: {
-        options: {
-          generatedImagesDir: '<%= yeoman.dist %>/images/generated'
-        }
-      },
-      server: {
-        options: {
-          debugInfo: true
-        }
-      }
-    },
-
     // Renames files for browser caching purposes
     rev: {
       dist: {
