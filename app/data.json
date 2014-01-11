@@ -1,0 +1,54 @@
+{
+	"judge": [
+		{ 
+			"name": "Twin",
+			"image": "./images/roof.jpg"
+		},
+		{
+			"name": "Jua",
+			"image": "./images/jua.jpg"
+		},
+		{
+			"name": "Dean",
+			"image": "./images/dean.jpg"
+		}
+	],
+	"pikachu": [
+		{
+			"name": "bas",
+			"image": "./images/bas.jpg"
+		},
+		{
+			"name": "new",
+			"image": "./images/new.jpg"
+		},
+		{
+			"name": "nut",
+			"image": "./images/nut.jpg"
+		},
+		{
+			"name": "pla",
+			"image": "./images/pla.jpg"
+		}
+	],
+	"kitty": [
+		{
+			"name": "art",
+			"image": "./images/art.jpg"
+		},
+		{
+			"name": "dol",
+			"image": "./images/dol.jpg"
+		}
+	],
+	"vance": [
+		{
+			"name": "ball",
+			"image": "./images/ball.jpg"
+		},
+		{
+			"name": "mart",
+			"image": "./images/mart.jpg"
+		}
+	]
+}
