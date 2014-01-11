@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: BattleCtrl', function () {
 
   // load the controller's module
   beforeEach(module('geekyBattlePikachuApp'));
@@ -11,12 +11,21 @@ describe('Controller: MainCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    MainCtrl = $controller('BattleCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+
+  it('should have teams names for selection', function () {
+    expect(scope.teams.length).toEqual(4);
+    expect(scope.teams[0].name).toEqual('-');
+    expect(scope.teams[1].name).toEqual('Kitty');
+    expect(scope.teams[2].name).toEqual('Vanz');
+    expect(scope.teams[3].name).toEqual('Pikachu');
+  });
+
+  it('should not have the same dropdown item in both dropdown input',function(){
+    expect(scope.teamInputIsEqual() ).toEqual(true);
   });
 });

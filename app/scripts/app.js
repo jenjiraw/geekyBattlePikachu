@@ -10,7 +10,7 @@ angular.module('geekyBattlePikachuApp', [
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'BattleCtrl'
       })
       .otherwise({
         redirectTo: '/'
