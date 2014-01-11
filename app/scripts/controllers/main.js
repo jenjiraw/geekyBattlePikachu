@@ -11,6 +11,7 @@ angular.module('geekyBattlePikachuApp')
     $scope.team1;
     $scope.team2;
     $scope.teamBattleMessage;
+    $scope.msgClass;
 
     $scope.teamInputIsEqual = function(){
       // alert($scope.team1 + " " + $scope.team2);
@@ -20,9 +21,11 @@ angular.module('geekyBattlePikachuApp')
         if( $scope.team1 != $scope.team2)
         {
           $scope.teamBattleMessage="Let's Compete!"; 
+          $scope.msgClass = "";
         }
         else{
           $scope.teamBattleMessage="Team Name Shouldn't be the same!";
+          $scope.msgClass = "text-danger"; 
         };
       }
 

@@ -1,0 +1,26 @@
+<div class="row" ng-controller="BattleCtrl">
+	<div class="col-md-6">
+		<img src="../images/pla.jpg" class="img-thumbnail"> <br /> <br />
+
+		<div class="btn-group">
+      <select class="form-control">
+        <option ng-repeat="team in teams" value={{team.name}}> {{team.name}} </option>
+      </select>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<img src="../images/nut.jpg" class="img-thumbnail"> <br /> <br />
+    <div class="btn-group">
+  		<select class="form-control">
+          <option ng-repeat="team in teams"  value={{team.name}}> {{team.name}} </option>
+      </select>
+    </div>
+<<<<<<< HEAD
+  </div>
+  
+  <div class="col-md-12 text-center {{msgClass}}"> {{teamBattleMessage}}</div>
+  
+=======
+	</div>
+>>>>>>> aacbab3a4327320d1beb10ca80f46a61ef759d15
+</div>
