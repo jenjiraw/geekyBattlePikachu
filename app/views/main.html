@@ -1,10 +1,11 @@
 
 <div class="row" ng-controller="BattleCtrl">
-  <br /> <br /><br /> <br /><br /> <br />
+
+
   <div class="col-md-6 text-center">
     	<div class="col-md-6 text-center">
 
-    		<img src="../images/default.png"  class="team_player" alt="Responsive image"> <br /> <br />
+    		    <img class="team_player" ng-src= "{{getTeamPicture(team1)}}" alt="Responsive image"> </img><br /> <br />
 
 
     		<div class="btn-group">
@@ -15,7 +16,8 @@
     	</div>
 
     	<div class="col-md-6 text-center">
-    		<img src="../images/default.png"  class="team_player" alt="Responsive image"> <br /> <br />
+    		<img ng-src="{{getTeamPicture(team2)}}"  class="team_player" alt="Responsive image"> <br /> <br />
+
 
         <div class="btn-group">
       		<select class="form-control" ng-change="teamInputIsEqual()" ng-model="team2" >
@@ -23,6 +25,7 @@
           </select>
         </div>
       </div>
+
 
       <div class="col-md-12 text-center {{msgClass}}"> {{teamBattleMessage}}</div>
   </div>
