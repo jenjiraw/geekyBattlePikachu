@@ -24,7 +24,7 @@ angular.module('geekyBattlePikachuApp')
           $scope.msgClass = "";
         }
         else{
-          $scope.teamBattleMessage="Team Name Shouldn't be the same!";
+          $scope.teamBattleMessage="Team name shouldn't be the same!";
           $scope.msgClass = "text-danger"; 
         };
       }
@@ -40,7 +40,7 @@ angular.module('geekyBattlePikachuApp')
       }
       else
       {
-        $scope.teamBattleMessage="Please select another team";
+        $scope.teamBattleMessage="Please select another team.";
         return false;
       }
 

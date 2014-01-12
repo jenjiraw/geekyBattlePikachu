@@ -25,33 +25,33 @@ describe('Controller: BattleCtrl', function () {
   });
 
   it('should not have the same dropdown item in both dropdown input',function(){
-    scope.team1 = "s";
-    scope.team2 = "s s";
+    scope.team1 = "Pikachu";
+    scope.team2 = "Vanz";
     
     expect(scope.teamInputIsEqual()).toEqual("Let's Compete!");
   });
 
   it('should not have the empty selection in the list' , function(){
-    scope.team1 = "s";
+    scope.team1 = "Vanz";
     scope.team2 = "";
     expect(scope.checkEmptySelection()).toEqual(false);
   });
 
   it('should expect the warning msg to be red, if same team are selected', function(){
-    scope.team1 = "s";
-    scope.team2 = "s";
+    scope.team1 = "Vanz";
+    scope.team2 = "Vanz";
     scope.teamInputIsEqual();
     expect(scope.msgClass).toEqual("text-danger");
   });
 
   it('should expect the warning msg to be normal as default', function(){
-    scope.team1 = "s";
-    scope.team2 = "s";
+    scope.team1 = "Vanz";
+    scope.team2 = "Vanz";
     scope.teamInputIsEqual();
     expect(scope.msgClass).toEqual("text-danger");
 
-    scope.team1 = "a";
-    scope.team2 = "s";
+    scope.team1 = "Vanz";
+    scope.team2 = "Pikachu";
     scope.teamInputIsEqual();
     expect(scope.msgClass).toEqual("");
 
