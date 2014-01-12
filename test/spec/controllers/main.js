@@ -57,4 +57,20 @@ describe('Controller: BattleCtrl', function () {
 
   });
 
+  it('should  get the team object after input the name' , function(){
+    var teamName = "Vanz";
+    var vanzobj = {name:'Vanz' , logo:'logo_vanz.jpg'};
+
+    expect(scope.getTeamObject(teamName).name).toEqual(vanzobj.name);
+    expect(scope.getTeamObject(teamName).logo).toEqual(vanzobj.logo);
+
+  });
+
+  it('should display the image when the team is selected on the dropdown',function(){
+    var teamName = "Vanz";
+    var vanzobj = {name:'Vanz' , logo:'logo_vanz.jpg'};
+
+    expect(scope.getTeamPicture(teamName).logo).toEqual(vanzobj.logo);
+  });
+
 });
