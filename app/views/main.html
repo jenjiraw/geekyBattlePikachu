@@ -1,25 +1,118 @@
+
 <div class="row" ng-controller="BattleCtrl">
-	<div class="col-md-6 text-center">
-		<img src="../images/default.png"  class="team_player" alt="Responsive image"> <br /> <br />
+  <br /> <br /><br /> <br /><br /> <br />
+  <div class="col-md-6 text-center">
+    	<div class="col-md-6 text-center">
+
+    		<img src="../images/default.png"  class="team_player" alt="Responsive image"> <br /> <br />
 
 
-		<div class="btn-group">
-      <select class="form-control" ng-change="teamInputIsEqual()" ng-model="team1" >
-        <option ng-repeat="team in teams" value={{team.name}}> {{team.name}} </option>
-      </select>
-		</div>
-	</div>
+    		<div class="btn-group">
+          <select class="form-control" ng-change="teamInputIsEqual()" ng-model="team1" >
+            <option ng-repeat="team in teams" value={{team.name}}> {{team.name}} </option>
+          </select>
+    		</div>
+    	</div>
 
-	<div class="col-md-6 text-center">
-		<img src="../images/default.png"  class="team_player" alt="Responsive image"> <br /> <br />
+    	<div class="col-md-6 text-center">
+    		<img src="../images/default.png"  class="team_player" alt="Responsive image"> <br /> <br />
 
-    <div class="btn-group">
-  		<select class="form-control" ng-change="teamInputIsEqual()" ng-model="team2" >
-          <option ng-repeat="team in teams" value={{team.name}}> {{team.name}} </option>
-      </select>
-    </div>
+        <div class="btn-group">
+      		<select class="form-control" ng-change="teamInputIsEqual()" ng-model="team2" >
+              <option ng-repeat="team in teams" value={{team.name}}> {{team.name}} </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-12 text-center {{msgClass}}"> {{teamBattleMessage}}</div>
   </div>
+
+
+<div class="col-md-6 text-center">
+    <div class="col-md-12 text-left ">
+      <ul class="media-list">
+        <li class="media">
+          <a class="pull-left">
+             <img src="../images/rung.jpg"  class="team_player" alt="Responsive image"><br />
+          </a>
+          <div class="media-body">
+            <br>
+            <br>
+            <div class="radio">
+              <label>
+                <input type="radio" name="judge1" id="judge1" value="player1" checked>
+                Player1
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="judge1" id="judge1" value="player2" checked>
+                Player2
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+  </div>
+
+
+
+
   
-  <div class="col-md-12 text-center {{msgClass}}"> {{teamBattleMessage}}</div>
-  
+
+  <div class="col-md-12 text-left">
+       <ul class="media-list">
+        <li class="media">
+          <a class="pull-left">
+             <img src="../images/dean.jpg"  class="team_player" alt="Responsive image"><br />
+          </a>
+          <div class="media-body">
+            <br>
+            <br>
+            <div class="radio">
+              <label>
+                <input type="radio" name="judge2" id="judge2" value="player1" checked>
+                Player1
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="judge2" id="judge2" value="player2" checked>
+                Player2
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </div>
+
+  <div class="col-md-12 text-left">
+       <ul class="media-list">
+        <li class="media">
+          <a class="pull-left">
+             <img src="../images/vee.jpg"  class="team_player" alt="Responsive image"><br />
+          </a>
+          <div class="media-body">
+            <br>
+            <br>
+            <div class="radio">
+              <label>
+                <input type="radio" name="judge3" id="judge3" value="player1" checked>
+                Player1
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="judge3" id="judge3" value="player2" checked>
+                Player2
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </div>
+
+</div>
+
 </div>
