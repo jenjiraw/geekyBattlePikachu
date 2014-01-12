@@ -1,6 +1,7 @@
 <div class="row" ng-controller="BattleCtrl">
 	<div class="col-md-6 text-center">
-		<img src="../images/pla.jpg" class="img-thumbnail"> <br /> <br />
+		<img src="../images/pla.jpg"  class="team_player" alt="Responsive image"> <br /> <br />
+
 
 		<div class="btn-group">
       <select class="form-control" ng-change="teamInputIsEqual()" ng-model="team1" >
@@ -8,8 +9,10 @@
       </select>
 		</div>
 	</div>
+
 	<div class="col-md-6 text-center">
-		<img src="../images/nut.jpg" class="img-thumbnail"> <br /> <br />
+		<img src="../images/nut.jpg"  class="team_player" alt="Responsive image"> <br /> <br />
+
     <div class="btn-group">
   		<select class="form-control" ng-change="teamInputIsEqual()" ng-model="team2" >
           <option ng-repeat="team in teams" value={{team.name}}> {{team.name}} </option>
